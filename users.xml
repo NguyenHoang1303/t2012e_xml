@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<users
+        xmlns="https://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.w3schools.com/xml users.xsd">
+    <user>
+        <employee id="1">
+            <firstName>Hoang</firstName>
+            <lastName>Nguyen</lastName>
+            <email>hoangnguyen@gmail.com</email>
+            <phone>0969451691</phone>
+            <age>25</age>
+            <position>dev</position>
+            <department>IT</department>
+        </employee>
+    </user>
+    <user>
+        <teacher id="1">
+            <firstName>Xuan Hung</firstName>
+            <lastName>Dao</lastName>
+            <email>XuanHung@gmail.com</email>
+            <phone>09090909</phone>
+            <age>18</age>
+            <experience>-10</experience>
+            <class>t2012e</class>
+        </teacher>
+    </user>
+    <user>
+        <employee id="2">
+            <firstName>Phuong</firstName>
+            <lastName>La</lastName>
+            <email>Hanh@gmail.com</email>
+            <phone>0123456789</phone>
+            <age>20</age>
+            <position>dev</position>
+            <department>IT</department>
+        </employee>
+    </user>
+    <user>
+        <employee id="3">
+            <firstName>Bach</firstName>
+            <lastName>Nguyen Tung</lastName>
+            <email>Bach@gmail.com</email>
+            <phone>0321654987</phone>
+            <age>20</age>
+            <position>dev</position>
+            <department>IT</department>
+        </employee>
+    </user>
+    <user>
+        <employee id="4">
+            <firstName>Hoang Trung</firstName>
+            <lastName>Kien</lastName>
+            <email>Kien@gmail.com</email>
+            <phone>9874561230</phone>
+            <age>19</age>
+            <position>dev</position>
+            <department>IT</department>
+        </employee>
+    </user>
+</users>
