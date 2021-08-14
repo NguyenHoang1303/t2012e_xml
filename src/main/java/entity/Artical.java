@@ -1,7 +1,6 @@
 package entity;
 
 public class Artical {
-    private int id;
     private String title;
     private String description;
     private String pubDate;
