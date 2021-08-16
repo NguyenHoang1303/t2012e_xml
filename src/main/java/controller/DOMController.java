@@ -1,4 +1,4 @@
-package xml;
+package controller;
 
 import entity.Artical;
 import org.w3c.dom.Document;
@@ -12,7 +12,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DomParseXml {
+public class DOMController {
 
     private static final String URL_VNEXPRESS = VnExConstant.URL_VNEXPRESS;
     private static final String ITEM_TAG = VnExConstant.ITEM_TAG;

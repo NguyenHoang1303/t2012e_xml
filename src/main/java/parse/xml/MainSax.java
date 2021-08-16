@@ -1,22 +1,24 @@
+package parse.xml;
+
 import entity.Artical;
 import model.ArticalModel;
 import util.VnExConstant;
-import xml.SaxParseXML;
+import controller.SAXController;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.util.List;
 
-public class MainSaxParseXML {
+public class MainSax {
     private static final String URL_VNEXPRESS = VnExConstant.URL_VNEXPRESS;
 
-    public static void main(String[] args) {
+    public void parseXML(){
         try {
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
-            SaxParseXML saxParseXML = new SaxParseXML();
-            saxParser.parse(URL_VNEXPRESS, saxParseXML);
-            List<Artical> list = saxParseXML.getArticalList();
+            SAXController SAXController = new SAXController();
+            saxParser.parse(URL_VNEXPRESS, SAXController);
+            List<Artical> list = SAXController.getArticalList();
             ArticalModel articalModel = new ArticalModel();
             for (Artical artical: list) {
                 articalModel.insertArticle(artical);

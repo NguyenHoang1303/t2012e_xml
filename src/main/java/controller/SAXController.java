@@ -1,4 +1,4 @@
-package xml;
+package controller;
 
 import entity.Artical;
 import org.xml.sax.Attributes;
@@ -8,7 +8,7 @@ import util.VnExConstant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SaxParseXML extends DefaultHandler {
+public class SAXController extends DefaultHandler {
     boolean bTitle = false;
     boolean bDescription = false;
     boolean bPubDate = false;

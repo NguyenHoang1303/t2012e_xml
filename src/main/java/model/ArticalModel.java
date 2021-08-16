@@ -22,6 +22,7 @@ public class ArticalModel {
             pp.setString(3, article.getPubDate());
             pp.setString(4, article.getLink());
             pp.execute();
+            System.out.println(article.toString());
             System.out.println("Success!");
         } catch (SQLException throwables) {
             throwables.printStackTrace();

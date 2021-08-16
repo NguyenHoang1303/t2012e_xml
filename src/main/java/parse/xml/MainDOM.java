@@ -1,15 +1,16 @@
+package parse.xml;
+
 import entity.Artical;
 
 
 import model.ArticalModel;
-import xml.DomParseXml;
+import controller.DOMController;
 
 import java.util.List;
 
-public class MainDOMParseXML {
-
-    public static void main(String[] args) {
-       List<Artical> listArtical = DomParseXml.getList();
+public class MainDOM {
+    public void parseXML(){
+        List<Artical> listArtical = DOMController.getList();
         ArticalModel articalModel = new ArticalModel();
         if (listArtical != null) {
             for (Artical aritcal: listArtical) {
