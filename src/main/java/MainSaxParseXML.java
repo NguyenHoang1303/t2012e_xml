@@ -8,13 +8,14 @@ import javax.xml.parsers.SAXParserFactory;
 import java.util.List;
 
 public class MainSaxParseXML {
+    private static final String URL_VNEXPRESS = VnExConstant.URL_VNEXPRESS;
 
     public static void main(String[] args) {
         try {
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
             SaxParseXML saxParseXML = new SaxParseXML();
-            saxParser.parse(VnExConstant.URL_VNEXPRESS, saxParseXML);
+            saxParser.parse(URL_VNEXPRESS, saxParseXML);
             List<Artical> list = saxParseXML.getArticalList();
             ArticalModel articalModel = new ArticalModel();
             for (Artical artical: list) {
