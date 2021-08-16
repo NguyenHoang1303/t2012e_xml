@@ -8,7 +8,7 @@ import controller.DOMController;
 
 import java.util.List;
 
-public class MainDOM {
+public class DOM {
     public void parseXML(){
         List<Artical> listArtical = DOMController.getList();
         ArticalModel articalModel = new ArticalModel();

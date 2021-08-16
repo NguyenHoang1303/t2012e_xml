@@ -9,7 +9,7 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.util.List;
 
-public class MainSax {
+public class SAX {
     private static final String URL_VNEXPRESS = VnExConstant.URL_VNEXPRESS;
 
     public void parseXML(){
